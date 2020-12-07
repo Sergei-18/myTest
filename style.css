@@ -1,0 +1,71 @@
+form.form{
+    width: 448px;
+    margin: 50px auto;
+    overflow: hidden;
+    padding: 2px;
+    background-color: #ccc;
+    box-shadow: 0 0 8px #ccc(0,0,0,.3) inset;
+    transform: skewX(-45deg)
+
+  }
+
+  
+@media(max-width : 480px){
+  form.form{transform: skewX(0);
+    width: 350px;
+    margin: 50px auto;}}
+
+    form.form input{
+      float: left;
+      border: 0;
+      -webkit-appearance: none;
+      outline: none;
+      padding: 2px 10px 2px 2px;
+      font: 16px Arial, Helvetica, sans-serif;
+      height: 28px;
+      width: 290px;
+      margin: 0;
+      margin-left: 10px;
+      margin-right: 16px;
+      background: transparent;
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+      transform: skewX(45deg)
+            
+    }
+
+
+
+    @media(max-width : 480px){
+      form.form input{
+        transform: skewX(0);
+        width: 220px;
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+
+    form.my-form input placeholder {
+        transform: skewX(45deg)
+      }
+
+    form.form button{
+        
+        border: none;
+        display: inline-block;
+        padding: .5em 1em;
+         margin: 0;
+        background: red;
+        color: rgb(248, 238, 238);
+        text-transform: uppercase;
+        text-decoration: none;
+        font: bold 100%/1 sans-serif;
+    }
+    
+    form.form button > div{
+        transform: skewX(45deg);
+    }
+    @media(max-width : 480px){
+	  form.form button > div{transform: skewX(0)}}
+	  
+
+	  /* //-------------------------------------- */
